@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinematic Horror Interactive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Overlay for autoplay fix -->
+<div id="startOverlay">Click anywhere to start</div>
+
+<!-- Main Content -->
+<div class="mainContent" style="display:none">
+    <!-- Notes -->
+    <div id="firstText"></div>
+    <div id="secondText"></div>
+
+    <!-- Buttons -->
+    <div class="button-area">
+        <button id="redBtn" class="redBtn">Red</button>
+        <button id="greenBtn" class="greenBtn">Green</button>
+    </div>
+
+    <!-- Emergency flash -->
+    <div id="emergencyFlash"></div>
+
+    <!-- Mist Canvas -->
+    <canvas id="mistCanvas"></canvas>
+
+    <!-- Final Reveal -->
+    <div id="finalReveal">
+        <img id="qrImage" alt="QR code">
+        <div id="glowNote"></div>
+        <div id="passwordContainer">
+            <span id="passwordText"></span>
+            <button id="copyPass">Copy</button>
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <audio id="bgMusic" loop></audio>
+    <audio id="typeSound"></audio>
+    <audio id="clickSound"></audio>
+    <audio id="alarmSound"></audio>
+    <audio id="whisperSound"></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
